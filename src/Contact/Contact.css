@@ -68,3 +68,9 @@ button:hover {
   border: 2px solid white;
   background-color: rgb(129, 76, 26);
 }
+.text-danger {
+  color: #ff0e0e;
+}
+.text-bold {
+  font-weight: bold;
+}

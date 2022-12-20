@@ -22,7 +22,7 @@ const App = () => {
                 marginBottom: "50px",
               }}
             >
-              Hello, I'm <span>Vinay Matta.</span>
+              Hello, I'm <span>Danijel Bradaric.</span>
             </h1>
             <h2
               style={{
@@ -31,7 +31,7 @@ const App = () => {
                 marginBottom: "50px",
               }}
             >
-              I'm a full-stack Web Developer.
+              I'm a Full-Stack Web Developer.
             </h2>
           </Bounce>
           {window.innerWidth > 767 ? (

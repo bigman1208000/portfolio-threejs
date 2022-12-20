@@ -16,6 +16,9 @@ const Contact = () => {
 
   const submitEmail = async (e) => {
     e.preventDefault();
+    alert("Contact feature was blocked!");
+    window.close("/contact")
+    return;
     setDisabled(true);
     axios({
       method: "POST",
@@ -125,6 +128,7 @@ const Contact = () => {
             Leave a message for me. I will be more than happy to hear from you
             :)
           </p>
+          <p className="text-danger text-bold">Contact feature was blocked!</p>
           <hr />
           <form
             id="contact-form"

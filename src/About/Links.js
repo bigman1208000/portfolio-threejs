@@ -7,13 +7,22 @@ const Links = ({ font }) => {
   const text_angle = [Math.PI / 2 - Math.PI / 8, Math.PI, 0];
   return (
     <>
-      <mesh rotation={[0, Math.PI, 0]} position={[x + 2, 0.01, 90]}>
-        <textBufferGeometry
-          attach="geometry"
-          args={["Links", { font, size: 3, height: 1 }]}
-        />
-        <meshBasicMaterial attach="material" color="#fafafa" metalness={1} />
-      </mesh>
+      <group>
+        <mesh rotation={[0, Math.PI, 0]} position={[x + 2, 0.01, 90]}>
+          <textBufferGeometry
+            attach="geometry"
+            args={["Links", { font, size: 3, height: 1 }]}
+          />
+          <meshBasicMaterial attach="material" color="#fafafa" metalness={1} />
+        </mesh>
+        <mesh rotation={[0, Math.PI, 0]} position={[x, 4, 90]}>
+          <textBufferGeometry
+            attach="geometry"
+            args={["Blocked!", { font, size: 1, height: 0.5 }]}
+          />
+          <meshBasicMaterial attach="material" color="#fa0000" metalness={1} />
+        </mesh>
+      </group>
       <group>
         <mesh rotation={text_angle} position={[x, 0.1, z]}>
           <textBufferGeometry

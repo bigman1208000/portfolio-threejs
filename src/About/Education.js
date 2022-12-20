@@ -13,20 +13,20 @@ const Education = ({ font }) => {
       <group>
         <mesh
           rotation={[Math.PI / 2 - Math.PI / 8, Math.PI, 0]}
-          position={[35, 0.1, 84]}
+          position={[38, 0.1, 84]}
         >
           <textBufferGeometry
             attach="geometry"
-            args={["DCRUST", { font, size: 1, height: 0.1 }]}
+            args={["Hochschule Heilbronn", { font, size: 1, height: 0.1 }]}
           />
           <meshBasicMaterial attach="material" color="#fafafa" metalness={1} />
         </mesh>
-        <mesh rotation={[Math.PI / 2, Math.PI, 0]} position={[37, 0.1, 81]}>
+        <mesh rotation={[Math.PI / 2, Math.PI, 0]} position={[38, 0.1, 81]}>
           <textBufferGeometry
             attach="geometry"
             args={[
-              "B.Tech ECE \n Aug 2018-2022",
-              { font, size: 1, height: 0.1 },
+              "Hochschule fur Technikund Wirtschaft \n                         2013-2017",
+              { font, size: 0.5, height: 0.1 },
             ]}
           />
           <meshBasicMaterial attach="material" color="#fafafa" metalness={1} />
@@ -40,7 +40,7 @@ const Education = ({ font }) => {
           <textBufferGeometry
             attach="geometry"
             args={[
-              "R.S. Public Sr. Sec. School",
+              "Bachelor of Applied Science",
               { font, size: 1, height: 0.1 },
             ]}
           />
@@ -49,14 +49,14 @@ const Education = ({ font }) => {
         <mesh rotation={[Math.PI / 2, Math.PI, 0]} position={[37, 0.1, 69]}>
           <textBufferGeometry
             attach="geometry"
-            args={["Karnal, Haryana", { font, size: 1, height: 0.1 }]}
+            args={["        (BASc)", { font, size: 1, height: 0.1 }]}
           />
           <meshBasicMaterial attach="material" color="#fafafa" metalness={1} />
         </mesh>
         <mesh rotation={[Math.PI / 2, Math.PI, 0]} position={[37, 0.1, 66]}>
           <textBufferGeometry
             attach="geometry"
-            args={["Class X and XII ", { font, size: 1, height: 0.1 }]}
+            args={["Business and Informatics", { font, size: 0.7, height: 0.1 }]}
           />
           <meshBasicMaterial attach="material" color="#fafafa" metalness={1} />
         </mesh>

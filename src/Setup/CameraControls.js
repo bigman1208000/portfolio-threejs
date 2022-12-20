@@ -52,11 +52,11 @@ const CameraControls = ({ icon, squidDoll }) => {
   const chat = useRef(null);
   const museum = useRef(null);
   const ttt = useRef(null);
-  const gh = useRef(null);
-  const li = useRef(null);
-  const lc = useRef(null);
-  const cc = useRef(null);
-  const hr = useRef(null);
+  const gh = useRef(null);                      // github link
+  const li = useRef(null);                      // linkedin link
+  const lc = useRef(null);                      // leetcode link
+  const cc = useRef(null);                      // codechef link
+  const hr = useRef(null);                      // hackerrank link
   const arrow = useRef(null);
   const arrow1 = useRef(null);
   const contactRef = useRef(null);
@@ -252,7 +252,7 @@ const CameraControls = ({ icon, squidDoll }) => {
       onObject[0].object &&
       onObject[0].object.uuid === contactRef.current.uuid
     ) {
-      contact && window.open("https://vinay-matta.web.app/contact", "contact");
+      contact && window.open("/contact", "contact");
       setContact(false);
     } else {
       setContact(true);
