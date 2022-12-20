@@ -1,6 +1,6 @@
 import { Loader } from "@react-three/drei";
 import { Canvas, useLoader } from "@react-three/fiber";
-import axios from "axios";
+// import axios from "axios";
 import React, { useState } from "react";
 import Particles from "react-particles-js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
@@ -19,32 +19,32 @@ const Contact = () => {
     alert("Contact feature was blocked!");
     window.close("/contact")
     return;
-    setDisabled(true);
-    axios({
-      method: "POST",
-      url: "https://vinay-matta-server.herokuapp.com/send",
-      // url: "http://localhost:3001/send",
-      headers: { "Content-Type": "application/json" },
-      data: { name: name, email: email, subject: subject, message: message },
-    }).then((response) => {
-      console.log(response);
-      if (response.data.flag === "success") {
-        alert("Message Sent.");
-        resetForm();
-        setDisabled(false);
-      } else if (response.data.flag === "fail") {
-        alert(response.data.data);
-        setDisabled(false);
-      }
-    });
+    // setDisabled(true);
+    // axios({
+    //   method: "POST",
+    //   url: "https://vinay-matta-server.herokuapp.com/send",
+    //   // url: "http://localhost:3001/send",
+    //   headers: { "Content-Type": "application/json" },
+    //   data: { name: name, email: email, subject: subject, message: message },
+    // }).then((response) => {
+    //   console.log(response);
+    //   if (response.data.flag === "success") {
+    //     alert("Message Sent.");
+    //     resetForm();
+    //     setDisabled(false);
+    //   } else if (response.data.flag === "fail") {
+    //     alert(response.data.data);
+    //     setDisabled(false);
+    //   }
+    // });
   };
 
-  const resetForm = () => {
-    setName("");
-    setEmail("");
-    setMessage("");
-    setSubject("");
-  };
+  // const resetForm = () => {
+  //   setName("");
+  //   setEmail("");
+  //   setMessage("");
+  //   setSubject("");
+  // };
   const [messageModel] = useLoader(GLTFLoader, ["/models/message.glb"]);
 
   return (
