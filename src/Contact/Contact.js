@@ -12,7 +12,7 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  const [disabled, setDisabled] = useState(false);
+  // const [disabled, setDisabled] = useState(false);
 
   const submitEmail = async (e) => {
     e.preventDefault();
@@ -187,7 +187,8 @@ const Contact = () => {
             <button
               type="submit"
               className="primary-btn submit"
-              disabled={disabled}
+              // disabled={disabled}
+              disabled={true}
             >
               Submit
             </button>
